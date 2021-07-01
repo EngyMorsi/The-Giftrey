@@ -15,7 +15,7 @@
    <!-- Bootstrap core CSS -->
    <link href="css/bootstrap.css" rel="stylesheet">
    <!-- FontAwesome Icons core CSS -->
-   <link href="css/font-awesome.min.css" rel="stylesheet">
+   <link href="css/all.min.css" rel="stylesheet">
    <!-- Custom animate styles for this template -->
    <link href="css/animate.css" rel="stylesheet">
    <!-- Custom styles for this template -->
@@ -101,9 +101,12 @@
                                  <li class="nav-item  ">
                                     <a class="nav-link " id="loginform" >SiginIn</a>
                                  </li>
-                                  <li class="nav-item ">
-                                     <a class="nav-link color-grey-hover" href="Logout.html">LogOut</a>
-                                  </li>
+
+                                 
+                                 <li class="nav-item ">
+                                    <a class="nav-link color-grey-hover"  data-toggle="modal" data-target="#exampleModal"><i class="fas fa-cart-plus"></i><span class="">Cart</span></a>
+                                 </li>
+                                 
                                   
                                </ul>
                             </div>
@@ -188,6 +191,42 @@
          </div>
       </section>
       <!-- end inner page -->
+
+
+       <!-- model card -->
+
+ 
+ <!-- Modal -->
+ <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+   <div class="modal-dialog" role="document">
+     <div class="modal-content">
+       <div class="modal-header">
+         <h5 class="modal-title" id="exampleModalLabel">My card</h5>
+         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+           <span aria-hidden="true">&times;</span>
+         </button>
+       </div>
+       <div class="modal-body">
+          <div class="alert alert-danger" role="alert">
+             Your card is Empty
+          </div>
+      
+       </div>
+       <div class="modal-footer">
+         <button type="button" class="btn btn-secondary" style="background-color: brown !important;" data-dismiss="modal">Close</button>
+         <!-- <button type="button" style="background-color: cornflowerblue !important;" class="btn btn-danger">Add</button> -->
+       </div>
+     </div>
+   </div>
+ </div>
+
+               <!--  -->
+
+
+
+
+
+
       <!-- section -->
      
       <section class="py-5">
@@ -332,7 +371,7 @@
          ================================================== -->
       <script src="js/jquery.min.js"></script>
       <script src="js/tether.min.js"></script>
-      <script src="js/bootstrap.min.js"></script>
+      <script src="js/bootstrap.js"></script>
       <script src="js/parallax.js"></script>
       <script src="js/animate.js"></script>
       <script src="js/ekko-lightbox.js"></script>
